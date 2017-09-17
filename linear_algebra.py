@@ -1,7 +1,7 @@
 import math
 
 # Vectors ---------------------
-def vector_subtract(v, w):
+def vector_add(v, w):
   """
   Adds corresponding elements
   """
