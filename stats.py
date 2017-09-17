@@ -71,6 +71,11 @@ def correlation(x, y):
   else:
     return 0   # if no variation, correlation is zero
 
+def normalize(x):
+    x_mean = mean(x)
+    x_std = standard_deviation(x)
+    return [(i - x_mean) / x_std for i in x]
+
 a = [1,1,2,2,3,4,4,5,6,8,8,6,5,4,2,2,4,6,5,4,33,5,7,]
 print 'mode: ', mode(a)
 
